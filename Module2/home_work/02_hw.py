@@ -8,3 +8,19 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+
+
+
+cows = int(input("Введите количество коров n: "))
+m = cows % 10
+
+if 11 <= cows <= 14:
+    print('На лугу пасется ', cows,' korov')
+else:
+    if m == 1:
+        print('На лугу пасется ', cows,' korova')
+    elif 2 <= m <= 4:
+        print('На лугу пасется ', cows,' korovi')
+    elif m == 0 or 5 <= m <= 9:
+        print('На лугу пасется ', cows,' korov')
+
