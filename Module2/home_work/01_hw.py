@@ -6,3 +6,14 @@
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
 # TODO: your code here
+
+
+
+n = int(input("Ширина шоколадки: "))  # shoco_length
+m = int(input("Длина шоколадки: "))  # shoco_width
+k = int(input("Сколько хочешь отломить? "))
+
+if  (k % m == 0) or (k % n == 0) and (k <= n * m):
+    print('YES')
+else:
+    print('NO')
