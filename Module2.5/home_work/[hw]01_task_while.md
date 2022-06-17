@@ -35,7 +35,10 @@ n = 12
 ```
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
 
+cost = 9.99
+n = 12
+a = 1  # начало счетчика
+while a <= n:
+    print(cost * a, "рублей")
+    a += 1
