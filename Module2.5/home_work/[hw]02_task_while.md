@@ -23,3 +23,15 @@ b = int(input("b: "))
 
 # TODO: you code here...
 ```
+
+a = int(input("a: "))
+b = int(input("b: "))
+while a<=b:
+    if a%5 == 0:
+        print(a)
+    a +=1
+
+while a>=b:
+    if a%5 == 0:
+        print(a)
+    a -=1
