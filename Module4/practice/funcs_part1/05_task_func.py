@@ -7,3 +7,21 @@
 
 
 # Не забудьте протестировать вашу функцию
+
+
+def can_triangle(p1, p2, p3):
+    length1 = ((p2[0] - p1[0]) ** 2 + (p2[1] - p1[1]) ** 2) ** 0.5
+    length2 = ((p3[0] - p1[0]) ** 2 + (p3[1] - p1[1]) ** 2) ** 0.5
+    length3 = ((p3[0] - p2[0]) ** 2 + (p3[1] - p2[1]) ** 2) ** 0.5
+    if length1 + length2 != length3 and length2 + length3 != length1 and length1 + length3 != length2:
+        perimeter = length1 + length2 + length3
+        p = perimeter / 2  # подпеременная, полупериметр
+        s = (p * (p - length1) * (p - length2) * (p - length3)) ** 0.5
+        print('Периметр: ', perimeter)
+        print('Площадь: ', s)
+    else:
+        print('Треугольник не получается-прямая линия')
+
+
+# Пример вызова функции
+can_triangle((3, 7), (12, 10), (5, 1))
