@@ -5,3 +5,11 @@
 
 def palindrome(number):
     pass
+
+def palindrome(number):
+    if str(number) == str(number)[::-1]:
+        print('Палиндром ОК')
+    else:
+        print('Палиндром НЕ ОК')
+
+palindrome(100001)
