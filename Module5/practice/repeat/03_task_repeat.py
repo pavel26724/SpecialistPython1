@@ -3,3 +3,13 @@
 
 a = ...
 b = ...
+
+def palindrome(a, b):
+    i = 0  # счетчик
+    while a <= b:
+        if str(a) == str(a)[::-1]:
+            i += 1
+        a += 1
+    print(i)
+
+palindrome(10, 98)
